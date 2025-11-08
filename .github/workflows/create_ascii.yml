@@ -20,7 +20,7 @@ jobs:
               run: cowsay -f dragon "Run for your life..I am gonna eat you" > dragon.txt
 
             - name: Check Dragon file
-              run: grep -i dragon dragon.txt
+              run: grep -i life dragon.txt
                  
             - name: Show dragon
               run: cat dragon.txt
