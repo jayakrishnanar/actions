@@ -14,7 +14,7 @@ jobs:
               run: echo "Welcome to Github Actions"
 
             - name: Install Cowsay
-              run: apt-get install cowsay -y
+              run: sudo apt-get install cowsay -y
 
             - name: Create a dog
               run: cowsay -f dog "Bow ...bow...I am going to bite you" > dog.txt
