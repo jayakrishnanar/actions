@@ -6,7 +6,7 @@ jobs:
     first_job
       runs-on: ubuntu-latest
       steps: 
-          -name: Welcome Messgage
+          -name: Welcome Message
            run: echo "This is my first github action"
 
           -name: List files
