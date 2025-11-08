@@ -13,20 +13,8 @@ jobs:
             - name: Welcome
               run: echo "Welcome to Github Actions"
 
-            - name: Install Cowsay
-              run: sudo apt-get install cowsay -y
-
-            - name: Create a dragon
-              run: cowsay -f dragon "Run for your life..I am gonna eat you" > dragon.txt
-
-            - name: Check Dragon file
-              run: grep -i life dragon.txt
-                 
-            - name: Show dragon
-              run: cat dragon.txt
+            - name: Execute Script
+              run: ./ascii.sh
               
-            - name: List Repositary
-              run: ls -latr
-
 
 
