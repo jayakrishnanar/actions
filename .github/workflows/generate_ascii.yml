@@ -10,16 +10,13 @@ build_job:
                run:|
                  sudo apt-get install cowsay -y
                  cowsay -f dragon "Run for your life..I am gonna eat you" > dragon.txt
-    
-    test_job: 
+test_job: 
         needs: build_job
         runs-on: ubuntu-latest
         steps:
             - name: Test Cowsay
               run: grep -i life dragon.txt
-
-       
-    deploy_job: 
+deploy_job: 
         needs: [test_job]
         runs-on: ubuntu-latest
         steps:
