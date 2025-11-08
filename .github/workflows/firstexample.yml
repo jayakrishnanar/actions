@@ -18,6 +18,7 @@ jobs:
       - name: Generate ASCII
         run: |
              sudo apt-get install cowsay -y 
+             sleep 60
              cowsay -f dog "Bow Bow ... I sense your presence" >> dog.txt
              cat dog.txt
 
