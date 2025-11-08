@@ -26,7 +26,7 @@ jobs:
         uses: actions/download-artifact@v5
         with:
           name: Dragon_file
-        run: grep -i life dragon.txt
+          run: grep -i life dragon.txt
 
   deploy_job:
     needs: [test_job]
