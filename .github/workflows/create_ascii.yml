@@ -14,7 +14,9 @@ jobs:
               run: echo "Welcome to Github Actions"
 
             - name: Execute Script
-              run: ./ascii.sh
+              run: |
+                chmod +x ascii.sh               
+                ./ascii.sh
               
 
 
