@@ -17,10 +17,10 @@ jobs:
               run: sudo apt-get install cowsay -y
 
             - name: Create a dog
-              run: cowsay -f dog "Bow ...bow...I am going to bite you" > dog.txt
+              run: cowsay -f dragon "Bow ...bow...I am going to bite you" > dragon.txt
 
             - name: Check Dog file
-              run: grep -i bow gog.txt
+              run: grep -i bow dragon.txt
               
             - name: List Repositary
               run: ls -latr
