@@ -1,0 +1,29 @@
+name: Create ASCII
+
+on: push
+
+jobs: 
+    first_job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v5.0.0
+
+            - name: Welcome
+              run: echo "Welcome to Github Actions"
+
+            - name: Install Cowsay
+              run: apt-get install cowsay -y
+
+            - name: Create a dog
+              run: cowsay -f dog "Bow ...bow...I am going to bite you" > dog.txt
+
+            - name: Check Dog file
+              run: grep -i bow gog.txt
+              
+            - name: List Repositary
+              run: ls -latr
+
+
+
