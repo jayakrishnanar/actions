@@ -16,11 +16,13 @@ jobs:
             - name: Install Cowsay
               run: sudo apt-get install cowsay -y
 
-            - name: Create a dog
-              run: cowsay -f dragon "Bow ...bow...I am going to bite you" > dragon.txt
+            - name: Create a dragon
+              run: cowsay -f dragon "Run for your life..I am gonna eat you" > dragon.txt
 
-            - name: Check Dog file
-              run: grep -i bow dragon.txt
+            - name: Check Dragon file
+              run: |
+                 grep -i dragon dragon.txt
+                 cat dragon.txt
               
             - name: List Repositary
               run: ls -latr
